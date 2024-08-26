@@ -7,15 +7,22 @@
 </head>
 <body>
 
-    <form method="post">
+    <!-- Skjema med tre forskjellige inputs  -->
+
+    <form method="post" action="index.php" id="eksempel1" name="eksempel1">
         <h3>Eksempel 1</h3>
+
         <label>Fornavn</label>
-        <input type="text">
+        <input type="text" id="fornavn" name="fornavn" required> <br/>
+
         <label>Etternavn</label>
-        <input type="text">
-        <button>Fortsett</button>
-        <button>Nullstill</button>
+        <input type="text" id="etternavn" name="etternavn" required> <br/>
+
+        <input type="submit" value="Fortsett" id="fortsett" name="fortsett"/>
+        <input type="reset" value="Nullstill" id="nullstill" name="fortsett"/>
+        
     </form>
     
 </body>
+
 </html>
